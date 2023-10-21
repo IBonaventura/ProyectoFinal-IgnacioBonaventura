@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Juegos Interactivos</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/sweetalert2@11/dist/sweetalert2.min.css">
+</head>
+<body>
+    <h1>Juegos Interactivos</h1>
+    <div>
+        <button id="menuInicio">Menú de Inicio</button>
+        <div id="juegos" style="display: none;">
+            <button id="piedraPapelTijeras">Piedra, Papel, Tijeras</button>
+            <button id="adivinaNumero">Adivina el Número</button>
+            <button id="adivinaColor">Adivina el Color</button>
+        </div>
+    </div>
+
+    <div id="juegoPiedraPapelTijeras" style="display: none;">
+        <!-- Código del juego Piedra, Papel, Tijeras -->
+    </div>
+
+    <div id="juegoAdivinaNumero" style="display: none;">
+        <!-- Código del juego Adivina el Número -->
+    </div>
+
+    <div id="juegoAdivinaColor" style="display: none;">
+        <h2>Adivina el Color</h2>
+        <p>Intenta adivinar el color aleatorio. Escribe el nombre del color en inglés.</p>
+        <input type="text" id="colorUsuario">
+        <button id="adivinaColorBoton">Adivina</button>
+        <p id="resultadoAdivinaColor"></p>
+        <p>Intentos restantes: <span id="intentosRestantesColor"></span></p>
+    </div>
+
+    <script src="script.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+</body>
+</html>
